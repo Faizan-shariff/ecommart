@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { addCart, delCart } from "../redux/action";
 import { NavLink } from "react-router-dom";
-import handleCart from "../redux/reducer/handleCart";
 
 function Cart() {
   const state = useSelector((state) => state.handleCart);
