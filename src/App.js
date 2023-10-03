@@ -9,7 +9,6 @@ import Checkout from "./component/Checkout";
 import About from "./component/About";
 import Contact from "./component/Contact";
 import Login from "./component/Login";
-import Register from "./component/Register";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/login" Component={Login}/>
-        <Route exact path="/register" Component={Register}/>
         <Route exact path="/" Component={Home} />
         <Route exact path="/products" Component={Products} />
         <Route exact path="/products/:id" Component={Product} />

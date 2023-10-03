@@ -3,20 +3,18 @@ import React from "react";
 const Login = () => {
   return (
     <div className="container" style={{width:"500px", height:"500px", padding:"30px"}}>
-<ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-  <li className="nav-item" role="presentation">
-    <a className="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-      aria-controls="pills-login" aria-selected="true">Login</a>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
   </li>
-  <li className="nav-item" role="presentation">
-    <a className="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-      aria-controls="pills-register" aria-selected="false">Register</a>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Register</button>
   </li>
-</ul>
+  </ul>
 
-<div className="tab-content">
-  <div className="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+  <form>
       <div className="text-center mb-3">
         <p>Sign in with:</p>
         <button type="button" className="btn btn-link btn-floating mx-1">
@@ -64,28 +62,28 @@ const Login = () => {
       <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
 
       <div className="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
+        <p>Not a member? Register</p>
       </div>
     </form>
   </div>
-  <div className="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-    <form>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+  <form>
       <div className="text-center mb-3">
         <p>Sign up with:</p>
         <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-facebook-f"></i>
+          <i className="fa fa-facebook-f"></i>
         </button>
 
         <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-google"></i>
+          <i className="fa fa-google"></i>
         </button>
 
         <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-twitter"></i>
+          <i className="fa fa-twitter"></i>
         </button>
 
         <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-github"></i>
+          <i className="fa fa-github"></i>
         </button>
       </div>
 
@@ -127,6 +125,7 @@ const Login = () => {
       <button type="submit" className="btn btn-primary btn-block mb-3">Sign in</button>
     </form>
   </div>
+  
 </div>
 </div>  );
 };
