@@ -9,6 +9,7 @@ import Checkout from "./component/Checkout";
 import About from "./component/About";
 import Contact from "./component/Contact";
 import Login from "./component/Login";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/about" Component={About}/>
         <Route exact path="/contact" Component={Contact}/>
         </Routes>
+      <Footer/>
     </>
   );
 }
